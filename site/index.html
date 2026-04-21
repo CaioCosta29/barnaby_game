@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barnaby: O Trovão de Bolso — Estúdio Pixel Guardião</title>
+  <meta name="description"
+    content="Um action-platformer 2D pixelado. O menor cavaleiro do reino é a última esperança contra os Wraiths de Vidro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <div class="nav-brand">
+      <span class="nav-logo-pixel"></span>
+      <span class="nav-title">BARNABY</span>
+      <span class="nav-sub">v1.0 · GDD</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#trailer">Trailer</a></li>
+      <li><a href="#mundo">Mundo</a></li>
+      <li><a href="#inimigos">Inimigos</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#equipe">Equipe</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="topo">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-lightning" aria-hidden="true"></div>
+    <div class="hero-shards" aria-hidden="true">
+      <span class="shard s1"></span><span class="shard s2"></span>
+      <span class="shard s3"></span><span class="shard s4"></span>
+      <span class="shard s5"></span><span class="shard s6"></span>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-kicker">Estúdio Pixel Guardião · 2026</p>
+      <h1 class="hero-title">
+        <span class="title-main">BARNABY</span>
+        <span class="title-sep"></span>
+        <span class="title-sub">O TROVÃO DE BOLSO</span>
+      </h1>
+      <p class="hero-tagline">A lenda do mini knight artilheiro.</p>
+      <div class="hero-theme-badge">
+        <span class="theme-label">TEMA DA JAM</span>
+        <span class="theme-text">"Isso não era para ser assim."</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#trailer" class="btn btn-primary">
+          <span class="btn-icon">▶</span> ASSISTIR TRAILER
+        </a>
+        <a href="#sobre" class="btn btn-ghost">SABER MAIS</a>
+      </div>
+    </div>
+
+    <div class="hero-barnaby" aria-hidden="true">
+      <div class="sprite sprite-barnaby-idle"></div>
+    </div>
+
+    <a href="#sobre" class="hero-scroll" aria-label="Rolar para baixo">
+      <span></span>
+    </a>
+  </header>
+
+  <section class="section section-synopsis" id="sobre">
+    <div class="section-inner">
+      <p class="section-eyebrow">&lt; CAPÍTULO 01 &gt;</p>
+      <h2 class="section-title">A QUEDA DE AZURE</h2>
+      <div class="title-underline"></div>
+      <div class="synopsis-grid">
+        <div class="synopsis-text">
+          <p class="lead">
+            No imponente <strong>Reino de Azure</strong>, o valor de um cavaleiro é medido
+            pelo tamanho de sua espada.
+          </p>
+          <p>
+            Mas quando os imortais <em>Wraiths de Vidro</em> invadem o castelo, a força
+            bruta falha. Gigantes de armadura caem um a um. Espadas se estilhaçam nas
+            lâminas cristalinas dos invasores.
+          </p>
+          <p class="highlight">
+            Apenas o <strong>menor</strong> dos cavaleiros — armado com agilidade e pólvora —
+            pode estilhaçar essa ameaça.
+          </p>
+          <p class="muted">
+            Barnaby não era para ser o herói. Não era para ninguém olhar duas vezes para
+            ele. Mas às vezes, o destino tem um senso de humor estranho.
+          </p>
+        </div>
+        <aside class="synopsis-stats">
+          <div class="stat-card">
+            <p class="stat-label">Gênero</p>
+            <p class="stat-value">Action-Platformer 2D</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Tática</p>
+            <p class="stat-value">Run &amp; Gun</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Perspectiva</p>
+            <p class="stat-value">Side-scroller Pixel Art</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Plataforma</p>
+            <p class="stat-value">PC · Web</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-trailer" id="trailer">
+    <div class="section-inner">
+      <p class="section-eyebrow">&lt; CAPÍTULO 02 &gt;</p>
+      <h2 class="section-title">TRAILER OFICIAL</h2>
+      <div class="title-underline"></div>
+      <p class="section-desc">Trailer oficial em produção.</p>
+      <div class="trailer-soon">
+        <div class="trailer-soon-bg" aria-hidden="true"></div>
+        <div class="trailer-soon-content">
+          <span class="trailer-soon-icon">▶</span>
+          <p class="trailer-soon-label">TRAILER OFICIAL</p>
+          <h3 class="trailer-soon-text">EM BREVE</h3>
+          <p class="trailer-soon-sub">Em produção · Estúdio Pixel Guardião</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-hero-stats" id="mecanicas">
+    <div class="section-inner">
+      <p class="section-eyebrow">&lt; CAPÍTULO 03 &gt;</p>
+      <h2 class="section-title">O HERÓI E A GAMEPLAY</h2>
+      <div class="title-underline"></div>
+      <div class="hero-stats-grid">
+        <div class="char-card">
+          <div class="char-portrait">
+            <div class="sprite sprite-barnaby-attack scale-3"></div>
+          </div>
+          <div class="char-info">
+            <p class="char-tag">PROTAGONISTA</p>
+            <h3 class="char-name">BARNABY</h3>
+            <p class="char-desc">
+              O menor cavaleiro do reino. Usa uma armadura leve de escamas de
+              dragão-mirim e um elmo com penacho vermelho. Carrega a lendária
+              <strong>"Trovejadora de Bolso"</strong>.
+            </p>
+            <div class="stat-bars">
+              <div class="stat-bar"><span>HP</span>
+                <div class="bar"><i style="width:55%"></i></div>
+              </div>
+              <div class="stat-bar"><span>ESTAMINA</span>
+                <div class="bar"><i style="width:88%"></i></div>
+              </div>
+              <div class="stat-bar"><span>MOBILIDADE</span>
+                <div class="bar"><i style="width:95%"></i></div>
+              </div>
+              <div class="stat-bar"><span>DEFESA</span>
+                <div class="bar"><i style="width:28%"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mech-card">
+          <p class="char-tag">MECÂNICAS 2D</p>
+          <h3 class="mech-title">Run &amp; Gun Tático</h3>
+          <ul class="mech-list">
+            <li><span class="key">SALTAR</span><span>Pula ataques e alcança plataformas.</span></li>
+            <li><span class="key">DASH</span><span>Corrida curta para desviar de projéteis.</span></li>
+            <li><span class="key">ATIRAR</span><span>A Trovejadora dispara — e o knockback te joga pra trás. Use
+                taticamente.</span></li>
+            <li><span class="key">ALQUIMIA</span><span>Use fragmentos de obsidiana em bancadas para upgrades.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-enemies" id="inimigos">
+    <div class="section-inner">
+      <p class="section-eyebrow">&lt; CAPÍTULO 04 &gt;</p>
+      <h2 class="section-title">A HORDA DE CRISTAL</h2>
+      <div class="title-underline"></div>
+      <div class="enemy-grid">
+        <article class="enemy-card">
+          <div class="enemy-sprite">
+            <div class="sprite sprite-stalker-walk scale-3"></div>
+          </div>
+          <p class="enemy-role">INFANTARIA</p>
+          <h3 class="enemy-name">Shard Stalkers</h3>
+          <p class="enemy-desc">
+            Feitos de vidro claro. Rápidos, agressivos, com braços em forma
+            de lâminas. Avançam cegamente para combate corpo a corpo.
+          </p>
+          <div class="enemy-meta">
+            <span>Velocidade · Alta</span>
+            <span>Dano · Baixo</span>
+          </div>
+        </article>
+        <article class="enemy-card">
+          <div class="enemy-sprite">
+            <div class="sprite sprite-wraith-idle scale-3"></div>
+          </div>
+          <p class="enemy-role">ARTILHARIA</p>
+          <h3 class="enemy-name">Obsidian Wraiths</h3>
+          <p class="enemy-desc">
+            Criaturas flutuantes de vidro negro puro. Mantêm distância e
+            disparam projéteis de energia sombria em arcos.
+          </p>
+          <div class="enemy-meta">
+            <span>Distância · Média</span>
+            <span>Dano · Alto</span>
+          </div>
+        </article>
+        <article class="enemy-card enemy-boss">
+          <div class="enemy-sprite">
+            <div class="sprite sprite-boss scale-3"></div>
+          </div>
+          <p class="enemy-role">BOSS</p>
+          <h3 class="enemy-name">The Ebony Shard</h3>
+          <p class="enemy-desc">
+            Guardião da horda. Amálgama de estilhaços fundidos a um reator
+            mágico. Destruí-lo transforma todo o exército inimigo em pó.
+          </p>
+          <div class="enemy-meta">
+            <span>Dano · Brutal</span>
+            <span>Final · 3</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-world" id="mundo">
+    <div class="section-inner">
+      <p class="section-eyebrow">&lt; CAPÍTULO 05 &gt;</p>
+      <h2 class="section-title">PROGRESSÃO DO MUNDO</h2>
+      <div class="title-underline"></div>
+      <ol class="stage-list">
+        <li class="stage">
+          <div class="stage-num">01</div>
+          <div class="stage-body">
+            <h3>AS CATACUMBAS</h3>
+            <p class="stage-tag">Fundação · Refúgio</p>
+            <p>O lar escondido de Barnaby. Ambientes apertados, música lenta e atmosférica. Inimigos mais lentos e
+              terreno desenhado para ensinar a mecânica de tiro.</p>
+          </div>
+        </li>
+        <li class="stage">
+          <div class="stage-num">02</div>
+          <div class="stage-body">
+            <h3>O GRANDE PÁTIO</h3>
+            <p class="stage-tag">Superfície · Escala gigante</p>
+            <p>A superfície projetada para gigantes. Arquitetura opressiva exige saltos precisos. Wraiths com escudos de
+              vidro e vitrais quebrando ao fundo.</p>
+          </div>
+        </li>
+        <li class="stage">
+          <div class="stage-num">03</div>
+          <div class="stage-body">
+            <h3>O PINÁCULO</h3>
+            <p class="stage-tag">Clímax · Sala do Trono</p>
+            <p>Plataformas flutuantes sobre abismos, música orquestral épica, espaços apertados com hordas pesadas. O
+              último suspiro do reino.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-gallery" id="galeria">
+    <div class="section-inner">
+      <p class="section-eyebrow">&lt; CAPÍTULO 06 &gt;</p>
+      <h2 class="section-title">GALERIA</h2>
+      <div class="title-underline"></div>
+      <p class="section-desc">Telas reais do protótipo.</p>
+      <div class="gallery-grid">
+        <figure class="gal-item gal-big">
+          <img src="assets/menu.png" alt="Tela inicial do jogo">
+          <figcaption>Menu principal</figcaption>
+        </figure>
+        <figure class="gal-item">
+          <img src="assets/gameplay.png" alt="Gameplay nas catacumbas">
+          <figcaption>Fase 1: As Catacumbas</figcaption>
+        </figure>
+        <figure class="gal-item">
+          <img src="assets/options.png" alt="Tela de opções">
+          <figcaption>Tela de Opções</figcaption>
+        </figure>
+        <figure class="gal-item">
+          <img src="assets/fragments.png" alt="Fragmentos de obsidiana">
+          <figcaption>Fragmentos · Moeda do jogo</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-team" id="equipe">
+    <div class="section-inner">
+      <p class="section-eyebrow">&lt; CRÉDITOS &gt;</p>
+      <h2 class="section-title">OS GUARDIÕES DO PIXEL</h2>
+      <div class="title-underline"></div>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-avatar" data-letter="C"></div>
+          <p class="member-name">Caio Costa</p>
+          <p class="member-role">Game Design · Programação</p>
+        </div>
+        <div class="team-member">
+          <div class="member-avatar" data-letter="C"></div>
+          <p class="member-name">Cesar Aranha</p>
+          <p class="member-role">Pixel Art · Animação</p>
+        </div>
+        <div class="team-member">
+          <div class="member-avatar" data-letter="P"></div>
+          <p class="member-name">Pedro Henrique</p>
+          <p class="member-role">Level Design · Narrativa</p>
+        </div>
+        <div class="team-member">
+          <div class="member-avatar" data-letter="L"></div>
+          <p class="member-name">Leticia Farias</p>
+          <p class="member-role">Áudio · Trilha</p>
+        </div>
+      </div>
+      <p class="team-footnote">Estúdio Pixel Guardião · 2026.1 · Feito para a 2ª avaliação</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-logo">BARNABY</p>
+        <p class="footer-sub">O Trovão de Bolso · v1.0</p>
+      </div>
+      <div class="footer-mid">
+        <p>&copy; 2026 Estúdio Pixel Guardião</p>
+        <p>Todas as artes derivam do GDD do projeto.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#topo" class="btn btn-ghost btn-small">↑ TOPO</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
