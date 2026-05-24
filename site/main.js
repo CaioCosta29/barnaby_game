@@ -2,11 +2,11 @@
   'use strict';
 
   const revealables = document.querySelectorAll(
-    '.section-title, .title-underline, .section-desc, ' +
-    '.synopsis-text, .synopsis-stats, ' +
-    '.char-card, .mech-card, ' +
-    '.enemy-card, .stage, .gal-item, .team-member, ' +
-    '.trailer-soon, .hero-theme-badge'
+    '.section-title, .underline, .section-desc, ' +
+    '.about-text, .about-stats, ' +
+    '.mechanic-card, ' +
+    '.enemy-card, .gal-item, .team-member, ' +
+    '.trailer-soon, .hero-badge'
   );
   revealables.forEach(el => el.classList.add('reveal'));
 
@@ -41,9 +41,6 @@
     window.addEventListener('scroll', () => {
       const y = Math.min(window.scrollY, 600);
       hero.style.setProperty('--parallax', y + 'px');
-      hero.querySelectorAll('.shard').forEach((s, i) => {
-        s.style.transform = `translateY(${y * (i % 2 ? -0.15 : 0.15)}px) rotate(${y * 0.02}deg)`;
-      });
     }, { passive: true });
   }
 })();
