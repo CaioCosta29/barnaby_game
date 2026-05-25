@@ -5,8 +5,8 @@
     '.section-title, .underline, .section-desc, ' +
     '.about-text, .about-stats, ' +
     '.mechanic-card, ' +
-    '.enemy-card, .gal-item, .team-member, ' +
-    '.trailer-soon, .hero-badge'
+    '.gal-item, .team-member, ' +
+    '.download-box'
   );
   revealables.forEach(el => el.classList.add('reveal'));
 
